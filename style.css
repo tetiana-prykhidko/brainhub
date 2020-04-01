@@ -94,6 +94,7 @@ p {
 	background: none;
 	border: 0;
 	cursor: pointer;
+	outline: none;
 }
 
 .burger__item {
@@ -114,6 +115,7 @@ p {
 	content: "";
 	width: 30px;
 	height: 3px;
+
 	background-color: #fff;
 
 	position: absolute;
@@ -140,15 +142,14 @@ p {
 	width: 100%;
 	height: 750px;
 
-	background: url(images/key.jpg) center no-repeat;
+	background: url(images/key.jpg) no-repeat;
+	background-position: center;
 	background-size: cover;
 }
 
 .intro__inner {
 	width: 100%;
 	max-width: 650px;
-	/*margin: 0 auto;
-	text-align: center;*/
 }
 
 .intro__title {
@@ -216,7 +217,7 @@ p {
 
 .features__item {
 	width: 33.33333%;
-	padding: 0 40px;
+	padding: 0 30px;
 	margin: 25px 0;
 
 	text-align: center;
@@ -307,8 +308,11 @@ p {
 	font-size: 15px;
 	color: #fff;
 }
+.works--big__img {
+	width: 50%;
+}
 
-/* Works
+/* Team
 ================ */
 .team {
 	margin: 100px 0 70px;
@@ -360,7 +364,7 @@ p {
 	color: #6c7279;
 }
 
-/* Works
+/* Social
 ================ */
 .social {
 	display: flex;
@@ -419,11 +423,15 @@ p {
 	fill: #fff;
 }
 
-/* Works
+/* Reviews
 ================ */
 .reviews {
 	overflow: hidden;
 	background-color: #7E0059;
+}
+
+.reviews .container {
+	padding: 0;
 }
 
 .reviews__item {
@@ -435,17 +443,11 @@ p {
 	width: 50%;
 	height: 400px;
 	position: relative;
-}
 
-.reviews__img {
-	position: absolute;
-	top: 50%;
-	left: 0;
-	z-index: 1;
-	max-width: 600px;
-	height: auto;
-
-	transform: translateY(-50%);
+	background-image: url("images/woman-holding.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .reviews__content {
@@ -453,7 +455,7 @@ p {
 	flex-direction: column;
 	justify-content: center;
 	width: 50%;
-	padding-left: 80px;
+	padding: 0 20px 0 40px;
 }
 
 .reviews__text {
@@ -461,7 +463,7 @@ p {
 
 	font-family: 'Cardo', sans-serif;
 	font-style: italic;
-	font-size: 36px;
+	font-size: 32px;
 	line-height: 1.2;
 	color: #fff;
 }
@@ -563,6 +565,20 @@ p {
 
 /* Media
 ================ */
+@media (max-width: 1250px) {
+
+	/* Works
+	================ */
+	.works__item {
+		width: 50%;
+	}
+
+	.works--big__img {
+		width: 100%;
+	}
+}
+
+
 @media (max-width: 991px) {
 
 	/* Burger */
@@ -587,7 +603,54 @@ p {
 	.intro__subtitle {
 		font-size: 20px;
 	}
+	/* Features */
+	.features {
+		margin: 40px 0;
+	}
 
+	.features__item {
+		width: 50%;
+	}
+
+	/* Works */
+	.works__item {
+		width: 100%;
+	}
+
+	/* Team */
+	.team__inner {
+		justify-content: center;
+	}
+
+	.team__item {
+		width: 50%;
+		text-align: center;
+	}
+
+	.team__photo {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	/* Team */
+	.social {
+		justify-content: center;
+	}
+
+	/* Reviews */
+	.reviews__photo {
+		width: 100%;
+		height: 350px;
+
+		margin-bottom: 20px;
+	}
+
+	.reviews__content {
+		width: 100%;
+
+		padding-bottom: 15px;
+		margin-bottom: 15px;
+	}
 
 }
 
@@ -612,6 +675,123 @@ p {
 		margin-bottom: 35px;
 
 		font-size: 16px;
+	}
+
+	/* Features */
+	.features__item {
+		width: 100%;
+	}
+
+	/* Works */
+	.works__item {
+		height: 250px;
+	}
+
+	/* Team */
+	.team__item {
+		width: 100%;
+		max-width: 650px;
+	}
+
+	.team__photo {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	/* Reviews */
+	.reviews__photo {
+		height: 330px;
+	}
+
+	.reviews__text {
+		font-size: 28px;
+	}
+
+	/* Downlosd */
+	.download {
+		margin: 50px;
+
+}
+
+/* Download */
+	.footer__inner {
+		padding: 50px 0;
+	}
+
+@media (max-width: 576px) {
+	/* Header */
+	.header__inner {
+		padding: 10px 20px;
+	}
+
+	/* Intro */
+	.intro__title {
+		font-size: 27px;
+	}
+
+	.intro__subtitle {
+		font-size: 14px;
+	}
+
+	/* Button */
+	.btn {
+		padding: 13px 19px;
+	}
+
+	/* Features */
+	.features__item {
+		padding: 0 10px;
+	}
+
+	/* Works */
+	.works__item {
+		height: 270px;
+	}
+
+	.team {
+		margin: 40px 0 20px;
+	}
+
+	/* Reviews */
+	.reviews__photo {
+		height: 260px;
+	}
+
+	.reviews__text {
+		font-size: 20px;
+	}
+
+	.reviews__author {
+		font-size: 12px;
+	}
+	
+	/* Downlosd */
+	.download {
+		margin: 40px 20px;
+	}
+
+	.download__text {
+		font-size: 13px;
+	}
+
+	.btn--long {
+	min-width: 250px;
+	}
+
+	/* Download */
+	.footer__inner {
+		padding: 35px 0;
+	}
+
+	.footer__block {
+		margin-bottom: 30px;
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.footer__block:last-child {
+		margin-bottom: 0;
 	}
 
 }
