@@ -44,6 +44,23 @@ p {
 	z-index: 1000;
 }
 
+.header.fixed {
+	height: auto;
+	
+	position: fixed;
+
+	background-color: #591c50;
+}
+
+.header.fixed .header__inner {
+	padding: 0 20px;
+	border-bottom: 0;
+}
+
+.header.fixed .nav__link {
+	color: #fff;
+}
+
 .header__inner {
 	padding: 15px 40px;
 
