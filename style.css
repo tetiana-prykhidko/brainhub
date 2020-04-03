@@ -601,6 +601,29 @@ p {
 	/* Burger */
 	.nav {
 		display: none;
+		width: 100%;
+		flex-direction: column;
+
+		background-color: #591c50;
+		text-align: right;
+		font-size: 17px;
+
+		position: absolute;
+		top: 100%;
+		right: 0;
+	}
+
+	.nav.show {
+		display: flex;
+	}
+
+	.nav__link {
+	
+		top: 100%
+		right: 0;
+		padding: 10px 15px;
+
+		color: #fff;
 	}
 
 	/* Burger */
