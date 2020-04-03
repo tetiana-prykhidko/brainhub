@@ -3,9 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	<meta name="viewport" content="with=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Cardo:400i|Open+Sans:700|Raleway:300,400,600,700&display=swap" rel="stylesheet">
 	<link rel="icon" href="images/Features/activebox-logo.png" type="image/x-icon">
+
+	<meta name="description" content="authenticity_token">
+	<meta name="google" content="notranslate">
+
 	<title>BrainHub</title>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
@@ -290,13 +295,32 @@
 	<div class="reviews" id="reviews">
 		<div class="container">
 			
-			<div class="reviews__item">
-				<div class="reviews__photo"></div>
-				<div class="reviews__content">
-					<div class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum est rem mollitia, tenetur voluptas dicta, eveniet libero nesciunt, molestiae sint accusantium incidunt illum!</div>
-					<div class="reviews__author">Jacob Wilson, Photographer</div>
+			<div class="reviews__slider" id="reviewsSlider">
+				<div class="slick-item">
+
+				<div class="reviews__item">
+					<div class="reviews__photo"></div>
+					<div class="reviews__content">
+						<div class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum est rem mollitia, tenetur voluptas dicta, eveniet libero nesciunt, molestiae sint accusantium incidunt illum!</div>
+						<div class="reviews__author">Jane Capter, Photographer</div>
+					</div>
+				</div>
+
+				</div>
+
+				<div class="slick-item">
+
+				<div class="reviews__item">
+					<div class="reviews__photo"></div>
+					<div class="reviews__content">
+						<div class="reviews__text">Error qui quam nulla ea pariatur. Similique, exercitationem, harum.</div>
+						<div class="reviews__author">Jacob Wilson, Photographer</div>
+					</div>
+				</div>
+
 				</div>
 			</div>
+		</div>
 
 		</div> <!-- /container -->
 	</div> <!-- /reviews -->
@@ -364,6 +388,7 @@
 	</footer> 
 
 <!-- Javascript-->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="app.js"></script>
 
 </body>

@@ -447,6 +447,15 @@ p {
 	background-color: #7E0059;
 }
 
+.reviews__slider {
+	height: 500px;
+	overflow: hidden;
+}
+
+.reviews__slider .slick-initialized {
+	height: auto;
+}
+
 .reviews .container {
 	padding: 0;
 }
@@ -454,17 +463,22 @@ p {
 .reviews__item {
 	display: flex;
 	flex-wrap: wrap;
+	overflow: hidden;
 }
 
 .reviews__photo {
 	width: 50%;
-	height: 400px;
+	height: 500px;
 	position: relative;
 
 	background-image: url("images/woman-holding.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+}
+
+.reviews__slider .slick-item:nth-child(2) .reviews__photo {
+	background-image: url("images/reviews-photo.jpg");
 }
 
 .reviews__content {
@@ -490,6 +504,46 @@ p {
 	font-weight: 700;
 	text-transform: uppercase;
 	color: #fff;
+}
+
+.slick-dots {
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 0 0 20px;
+	list-style: none;
+	width: 50%;
+
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 2;
+}
+
+.slick-dots li {
+	margin: 0 5px;
+}
+
+.slick-dots button {
+	width: 15px;
+	height: 15px;
+
+	background: #fff;
+	border-radius: 50%;
+	border: 0;
+	opacity: 0.5;
+	cursor: pointer;
+
+	font-size: 0;
+	color: transparent;
+}
+
+.slick-dots button:focus {
+	outline: none;
+}
+
+.slick-dots .slick-active button {
+	opacity: 1;
 }
 
 /* Download
@@ -618,9 +672,6 @@ p {
 	}
 
 	.nav__link {
-	
-		top: 100%
-		right: 0;
 		padding: 10px 15px;
 
 		color: #fff;
@@ -680,7 +731,7 @@ p {
 	/* Reviews */
 	.reviews__photo {
 		width: 100%;
-		height: 350px;
+		height: 300px;
 
 		margin-bottom: 20px;
 	}
@@ -740,7 +791,7 @@ p {
 
 	/* Reviews */
 	.reviews__photo {
-		height: 330px;
+		height: 320px;
 	}
 
 	.reviews__text {
@@ -793,10 +844,6 @@ p {
 	}
 
 	/* Reviews */
-	.reviews__photo {
-		height: 260px;
-	}
-
 	.reviews__text {
 		font-size: 20px;
 	}
@@ -835,3 +882,4 @@ p {
 	}
 
 }
+
